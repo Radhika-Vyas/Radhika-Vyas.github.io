@@ -16,6 +16,8 @@
       young = !young;
       now.hidden = young;
       kid.hidden = !young;
+      now.style.display = young ? 'none' : 'block';
+      kid.style.display = young ? 'block' : 'none';
       label.textContent = young
         ? 'Field guide · Specimen I · juvenile form'
         : 'Field guide · Specimen II · fully evolved';
