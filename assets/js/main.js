@@ -1,4 +1,4 @@
-/* Radhika Vyas · site scripts */
+/* Radhika Vyas: site scripts */
 (function () {
   'use strict';
 
@@ -19,8 +19,8 @@
       now.style.display = young ? 'none' : 'block';
       kid.style.display = young ? 'block' : 'none';
       label.textContent = young
-        ? 'Field guide · Specimen I · juvenile form'
-        : 'Field guide · Specimen II · fully evolved';
+        ? 'From the field guide: Specimen I'
+        : 'From the field guide: Specimen II';
       text.innerHTML = young
         ? '<i>Ursus radhika</i>, juvenile. Already practicing the growl.'
         : '<i>Ursus radhika</i>, adult form. Habitat: the lab by day, the decks by night.';
@@ -128,7 +128,7 @@
       playing = on;
       record.classList.toggle('spin', on);
       arm.classList.toggle('on', on);
-      nowLabel.textContent = (on ? 'Now spinning' : 'On deck') + ' · Vol. ' + sleeves[current].getAttribute('data-vol');
+      nowLabel.textContent = 'Vol. ' + sleeves[current].getAttribute('data-vol') + (on ? ', now spinning' : ', on deck');
       playBtn.textContent = on ? 'Lift the needle' : 'Drop the needle';
     }
     function select(i, autoplay) {

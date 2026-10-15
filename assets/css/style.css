@@ -1,4 +1,4 @@
-/* Radhika Vyas · Midnight & Antique Gold */
+/* Radhika Vyas: Midnight & Antique Gold */
 :root {
   --bg: #0B0B10;
   --text: #ECE6D6;
@@ -253,7 +253,10 @@ h1, h2, h3, p { margin: 0; }
   font-family: 'IM Fell English SC', serif; font-size: 15px; letter-spacing: .06em;
 }
 .pill::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
-.tags { font-family: 'IM Fell English SC', serif; font-size: 15px; letter-spacing: .05em; color: var(--muted); }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.tags li { padding: 3px 11px; border: 1.5px solid var(--rule); border-radius: var(--wobble); color: var(--muted2);
+  font-family: 'IM Fell English SC', serif; font-size: 15px; letter-spacing: .05em; }
+.rcard:hover .tags li { border-color: var(--accent-deep); }
 
 /* ---------- Words & Pictures ---------- */
 .words { display: flex; flex-wrap: wrap; gap: 56px; padding-bottom: 104px; }
