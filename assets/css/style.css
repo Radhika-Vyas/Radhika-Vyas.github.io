@@ -455,6 +455,10 @@ h1, h2, h3, p { margin: 0; }
   .lightbox img { max-height: 60vh; }
 }
 
+/* ---------- Kodiak Kortex logo ---------- */
+.crates-hero .dj { flex: 1 1 380px; }
+.kk-badge { width: min(420px, 100%); height: auto; }
+
 /* ---------- The Crates: On Repeat ---------- */
 .crate-section { padding-bottom: 110px; }
 .repeat-section { padding-bottom: 140px; }
